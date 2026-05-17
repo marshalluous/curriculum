@@ -25,48 +25,48 @@
       </div>
 
       <div class="sidebar-section">
-        <h3 class="sidebar-heading">Personal</h3>
+        <h3 class="sidebar-heading" data-i18n="s-personal">Personal</h3>
         <ul class="info-list">
           <li>
-            <span class="info-label">Location</span>
-            <span class="info-value">Itacaré, Brasil (45530-000)</span>
+            <span class="info-label" data-i18n="s-location">Location</span>
+            <span class="info-value" data-i18n="s-location-val">Itacaré, Brasil (45530-000)</span>
           </li>
           <li>
-            <span class="info-label">Nationality</span>
-            <span class="info-value">Swiss</span>
+            <span class="info-label" data-i18n="s-nationality">Nationality</span>
+            <span class="info-value" data-i18n="s-nationality-val">Swiss</span>
           </li>
           <li>
-            <span class="info-label">Date of Birth</span>
+            <span class="info-label" data-i18n="s-dob">Date of Birth</span>
             <span class="info-value">07.07.1987</span>
           </li>
         </ul>
       </div>
 
       <div class="sidebar-section">
-        <h3 class="sidebar-heading">Languages</h3>
+        <h3 class="sidebar-heading" data-i18n="s-languages">Languages</h3>
         <div class="language-list">
           <div class="language-item">
-            <span class="lang-name">German (Swiss)</span>
-            <span class="lang-badge native">Native</span>
+            <span class="lang-name" data-i18n="lang-german">German (Swiss)</span>
+            <span class="lang-badge native" data-i18n="s-native">Native</span>
           </div>
           <div class="language-item">
-            <span class="lang-name">English</span>
-            <span class="lang-badge fluent">C2 – Fluent</span>
+            <span class="lang-name" data-i18n="lang-english">English</span>
+            <span class="lang-badge fluent" data-i18n="s-fluent">C2 – Fluent</span>
           </div>
           <div class="language-item">
-            <span class="lang-name">Portuguese</span>
-            <span class="lang-badge basic">Basic</span>
+            <span class="lang-name" data-i18n="lang-portuguese">Portuguese</span>
+            <span class="lang-badge basic" data-i18n="s-basic">Basic</span>
           </div>
         </div>
       </div>
 
       <div class="sidebar-section">
-        <h3 class="sidebar-heading">Core Skills</h3>
+        <h3 class="sidebar-heading" data-i18n="s-skills">Core Skills</h3>
         <div class="skill-list">
           <div class="skill-row">
             <div class="skill-meta">
               <span class="skill-name">C# .NET / Core</span>
-              <span class="skill-exp">6 yrs</span>
+              <span class="skill-exp" data-i18n="exp-csharp">7 yrs</span>
             </div>
             <div class="skill-bar">
               <div class="skill-fill" style="width: 90%"></div>
@@ -75,44 +75,44 @@
           <div class="skill-row">
             <div class="skill-meta">
               <span class="skill-name">SQL</span>
-              <span class="skill-exp">12 yrs</span>
+              <span class="skill-exp" data-i18n="exp-sql">7 yrs</span>
             </div>
             <div class="skill-bar">
-              <div class="skill-fill" style="width: 95%"></div>
+              <div class="skill-fill" style="width: 97%"></div>
             </div>
           </div>
           <div class="skill-row">
             <div class="skill-meta">
               <span class="skill-name">JavaScript / TypeScript</span>
-              <span class="skill-exp">2 yrs</span>
+              <span class="skill-exp" data-i18n="exp-js">4 yrs</span>
             </div>
             <div class="skill-bar">
-              <div class="skill-fill" style="width: 60%"></div>
+              <div class="skill-fill" style="width: 72%"></div>
             </div>
           </div>
           <div class="skill-row">
             <div class="skill-meta">
               <span class="skill-name">Python</span>
-              <span class="skill-exp">1 yr</span>
+              <span class="skill-exp" data-i18n="exp-python">2 yrs</span>
             </div>
             <div class="skill-bar">
-              <div class="skill-fill" style="width: 38%"></div>
+              <div class="skill-fill" style="width: 48%"></div>
             </div>
           </div>
           <div class="skill-row">
             <div class="skill-meta">
               <span class="skill-name">NoSQL</span>
-              <span class="skill-exp">2 yrs</span>
+              <span class="skill-exp" data-i18n="exp-nosql">3 yrs</span>
             </div>
             <div class="skill-bar">
-              <div class="skill-fill" style="width: 50%"></div>
+              <div class="skill-fill" style="width: 58%"></div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="sidebar-section">
-        <h3 class="sidebar-heading">Frameworks &amp; Technologies</h3>
+        <h3 class="sidebar-heading" data-i18n="s-frameworks">Frameworks &amp; Technologies</h3>
         <div class="tag-cloud">
           <span class="tag">React</span>
           <span class="tag">Next.js</span>
@@ -122,6 +122,7 @@
           <span class="tag">WCF</span>
           <span class="tag">.NET MAUI</span>
           <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
           <span class="tag">Google Cloud</span>
           <span class="tag">Terraform</span>
           <span class="tag">Firestore</span>
@@ -130,6 +131,7 @@
           <span class="tag">MongoDB</span>
           <span class="tag">PostgreSQL</span>
           <span class="tag">Xamarin</span>
+          <span class="tag">TailwindCSS</span>
         </div>
       </div>
 
@@ -138,24 +140,28 @@
     <!-- ===== MAIN CONTENT ===== -->
     <main class="cv-main">
 
+      <div class="cv-topbar">
+        <div class="lang-switcher">
+          <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" id="btn-de" onclick="setLang('de')">DE</button>
+        </div>
+      </div>
+
       <!-- Professional Experience -->
       <section class="cv-section">
-        <h2 class="section-title">Professional Experience</h2>
+        <h2 class="section-title" data-i18n="t-experience">Professional Experience</h2>
         <div class="timeline">
 
           <div class="timeline-item current">
             <div class="timeline-dot"></div>
             <div class="timeline-body">
               <div class="entry-meta">
-                <span class="entry-period">2024 – Present</span>
-                <span class="badge freelance">Freelance</span>
+                <span class="entry-period">2024 – <span data-i18n="present">Present</span></span>
+                <span class="badge freelance" data-i18n="badge-freelance">Freelance</span>
               </div>
               <h3 class="entry-title">Senior Software Engineer</h3>
               <p class="entry-org">Source Werbeartikel GmbH</p>
-              <p class="entry-desc">Building and improving Google Cloud infrastructure for demand and supply management.
-                Delivering Python cloud functions that handle HTTP requests, Google Cloud PubSub events, ERP
-                integration, and order/delivery workflows — managed entirely as infrastructure as code with Terraform.
-              </p>
+              <p class="entry-desc" data-i18n="desc-source">Building and improving Google Cloud infrastructure for demand and supply management. Delivering Python cloud functions that handle HTTP requests, Google Cloud PubSub events, ERP integration, and order/delivery workflows — managed entirely as infrastructure as code with Terraform.</p>
               <div class="tech-tags">
                 <span class="tech">Python</span>
                 <span class="tech">Google Cloud</span>
@@ -170,14 +176,12 @@
             <div class="timeline-dot"></div>
             <div class="timeline-body">
               <div class="entry-meta">
-                <span class="entry-period">2025 – present</span>
-                <span class="badge freelance">Freelance</span>
+                <span class="entry-period">2025 – <span data-i18n="present">Present</span></span>
+                <span class="badge freelance" data-i18n="badge-freelance">Freelance</span>
               </div>
               <h3 class="entry-title">Senior Software Engineer</h3>
               <p class="entry-org">A1 Asset One GmbH</p>
-              <p class="entry-desc">Building and maintaining (DevOps) a Chrome Sidebar Extension, with AI enhancements,
-                aswell as the express.js backend server.
-                This includes working with Salesforce and other cloud based business tools as the main CRM.</p>
+              <p class="entry-desc" data-i18n="desc-a1">Building and maintaining (DevOps) a Chrome Sidebar Extension with AI enhancements, as well as the Express.js backend server. Includes working with Salesforce and other cloud-based business tools as the main CRM.</p>
               <div class="tech-tags">
                 <span class="tech">JavaScript</span>
                 <span class="tech">Salesforce</span>
@@ -192,12 +196,11 @@
             <div class="timeline-body">
               <div class="entry-meta">
                 <span class="entry-period">2025 – 2025</span>
-                <span class="badge freelance">Freelance</span>
+                <span class="badge freelance" data-i18n="badge-freelance">Freelance</span>
               </div>
               <h3 class="entry-title">Senior Software Engineer</h3>
               <p class="entry-org">Server-Ware GmbH</p>
-              <p class="entry-desc">Buildung a SaaS platform for virtual server subscriptions for small and medium
-                businesses in Germany.</p>
+              <p class="entry-desc" data-i18n="desc-serverware">Building a SaaS platform for virtual server subscriptions for small and medium businesses in Germany.</p>
               <div class="tech-tags">
                 <span class="tech">ASP.NET</span>
                 <span class="tech">TypeScript</span>
@@ -213,11 +216,11 @@
             <div class="timeline-body">
               <div class="entry-meta">
                 <span class="entry-period">2023 – 2024</span>
-                <span class="badge freelance">Freelance</span>
+                <span class="badge freelance" data-i18n="badge-freelance">Freelance</span>
               </div>
               <h3 class="entry-title">Senior Software Engineer</h3>
               <p class="entry-org">araucon GmbH</p>
-              <p class="entry-desc">Multiple .NET applications and cloud infrastructure for a variety of customers.</p>
+              <p class="entry-desc" data-i18n="desc-araucon">Multiple .NET applications and cloud infrastructure for a variety of customers.</p>
               <div class="tech-tags">
                 <span class="tech">C# Core</span>
                 <span class="tech">TypeScript</span>
@@ -237,7 +240,7 @@
                 <span class="entry-period">2021 – 2022</span>
               </div>
               <h3 class="entry-title">Senior Software Engineer</h3>
-              <p class="entry-org">Educational Planning Department, State of Zurich</p>
+              <p class="entry-org" data-i18n="org-edu-planning">Educational Planning Department, State of Zurich</p>
               <div class="tech-tags">
                 <span class="tech">C# Core</span>
                 <span class="tech">TypeScript</span>
@@ -256,8 +259,8 @@
               <div class="entry-meta">
                 <span class="entry-period">2018 – 2021</span>
               </div>
-              <h3 class="entry-title">Professional Software Engineer</h3>
-              <p class="entry-org">Swiss Learning Hub AG, Zurich</p>
+              <h3 class="entry-title" data-i18n="title-prof-eng">Professional Software Engineer</h3>
+              <p class="entry-org" data-i18n="org-slh">Swiss Learning Hub AG, Zurich</p>
               <div class="tech-tags">
                 <span class="tech">C#</span>
                 <span class="tech">T-SQL</span>
@@ -275,7 +278,7 @@
                 <span class="entry-period">2017 – 2018</span>
               </div>
               <h3 class="entry-title">Junior Software Engineer</h3>
-              <p class="entry-org">Winarco AG, St. Gallen</p>
+              <p class="entry-org" data-i18n="org-winarco">Winarco AG, St. Gallen</p>
               <div class="tech-tags">
                 <span class="tech">C#</span>
                 <span class="tech">Java</span>
@@ -292,8 +295,8 @@
               <div class="entry-meta">
                 <span class="entry-period">2013 – 2015</span>
               </div>
-              <h3 class="entry-title">Junior Systems &amp; Network Administrator</h3>
-              <p class="entry-org">SunGard (Switzerland) SA, Zurich</p>
+              <h3 class="entry-title" data-i18n="title-sysadmin">Junior Systems &amp; Network Administrator</h3>
+              <p class="entry-org" data-i18n="org-sungard">SunGard (Switzerland) SA, Zurich</p>
             </div>
           </div>
 
@@ -303,8 +306,8 @@
               <div class="entry-meta">
                 <span class="entry-period">2010 – 2013</span>
               </div>
-              <h3 class="entry-title">Teamleader Helpdesk &amp; Assistant Manager IT Support CH</h3>
-              <p class="entry-org">Kuoni Travel AG, Zurich</p>
+              <h3 class="entry-title" data-i18n="title-teamleader">Teamleader Helpdesk &amp; Assistant Manager IT Support CH</h3>
+              <p class="entry-org" data-i18n="org-kuoni">Kuoni Travel AG, Zurich</p>
             </div>
           </div>
 
@@ -313,7 +316,7 @@
 
       <!-- Education -->
       <section class="cv-section">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title" data-i18n="t-education">Education</h2>
         <div class="timeline">
 
           <div class="timeline-item">
@@ -322,8 +325,8 @@
               <div class="entry-meta">
                 <span class="entry-period">2015 – 2019</span>
               </div>
-              <h3 class="entry-title">BASc Computer Science – Software Engineering</h3>
-              <p class="entry-org">University of Applied Sciences Rapperswil (OST), Switzerland</p>
+              <h3 class="entry-title" data-i18n="edu-bachelor">BASc Computer Science – Software Engineering</h3>
+              <p class="entry-org" data-i18n="edu-ost">University of Applied Sciences Rapperswil (OST), Switzerland</p>
             </div>
           </div>
 
@@ -333,8 +336,8 @@
               <div class="entry-meta">
                 <span class="entry-period">2011 – 2014</span>
               </div>
-              <h3 class="entry-title">Certified Business IT Specialist</h3>
-              <p class="entry-org">IFA Weiterbildung AG, Zürich</p>
+              <h3 class="entry-title" data-i18n="edu-it-specialist">Certified Business IT Specialist</h3>
+              <p class="entry-org" data-i18n="org-ifa">IFA Weiterbildung AG, Zürich</p>
             </div>
           </div>
 
@@ -344,8 +347,8 @@
               <div class="entry-meta">
                 <span class="entry-period">2004 – 2008</span>
               </div>
-              <h3 class="entry-title">Apprenticeship – Computer Scientist (Systems Engineer)</h3>
-              <p class="entry-org">Zurich Public Transport, Zurich</p>
+              <h3 class="entry-title" data-i18n="edu-apprenticeship">Apprenticeship – Computer Scientist (Systems Engineer)</h3>
+              <p class="entry-org" data-i18n="org-vbz">Zurich Public Transport, Zurich</p>
             </div>
           </div>
 
@@ -354,20 +357,18 @@
 
       <!-- Selected Projects -->
       <section class="cv-section">
-        <h2 class="section-title">Selected Projects</h2>
+        <h2 class="section-title" data-i18n="t-projects">Selected Projects</h2>
         <div class="projects-grid">
 
           <div class="project-card">
             <div class="project-header">
-              <h3 class="project-title">Google Cloud Infrastructure</h3>
+              <h3 class="project-title" data-i18n="proj-gcp-title">Google Cloud Infrastructure</h3>
               <div class="project-meta">
                 <span class="project-client">Source Werbeartikel GmbH</span>
-                <span class="project-dur">8+ months</span>
+                <span class="project-dur" data-i18n="dur-8plus">8+ months</span>
               </div>
             </div>
-            <p class="project-desc">Cloud infrastructure for demand and supply management. Python cloud functions
-              handling HTTP requests, PubSub events, ERP updates, order and delivery confirmation. Full infrastructure
-              as code with Terraform.</p>
+            <p class="project-desc" data-i18n="proj-gcp-desc">Cloud infrastructure for demand and supply management. Python cloud functions handling HTTP requests, PubSub events, ERP updates, order and delivery confirmation. Full infrastructure as code with Terraform.</p>
             <div class="tech-tags">
               <span class="tech">Python</span>
               <span class="tech">Terraform</span>
@@ -380,13 +381,11 @@
             <div class="project-header">
               <h3 class="project-title">HASCI – Handheld Scanner Integration</h3>
               <div class="project-meta">
-                <span class="project-client">Deutsche Post DHL Group (Client of araucon GmbH)</span>
-                <span class="project-dur">8+ months</span>
+                <span class="project-client" data-i18n="client-dhl">Deutsche Post DHL Group (Client of araucon GmbH)</span>
+                <span class="project-dur" data-i18n="dur-8plus">8+ months</span>
               </div>
             </div>
-            <p class="project-desc">Android app for 100,000+ postmen integrating with handheld scanners for parcel
-              loading, delivery, and tracking. Supports both online and offline operation in large multi-disciplinary
-              teams.</p>
+            <p class="project-desc" data-i18n="proj-hasci-desc">Android app for 100,000+ postmen integrating with handheld scanners for parcel loading, delivery, and tracking. Supports both online and offline operation in large multi-disciplinary teams.</p>
             <div class="tech-tags">
               <span class="tech">Xamarin.Forms</span>
               <span class="tech">Xamarin.Android</span>
@@ -399,13 +398,11 @@
             <div class="project-header">
               <h3 class="project-title">MSR – Mobile Service Recording</h3>
               <div class="project-meta">
-                <span class="project-client">Flughafen München GmbH (Client of araucon GmbH)</span>
-                <span class="project-dur">6 months</span>
+                <span class="project-client" data-i18n="client-munich">Flughafen München GmbH (Client of araucon GmbH)</span>
+                <span class="project-dur" data-i18n="dur-6">6 months</span>
               </div>
             </div>
-            <p class="project-desc">Lead architect and front-end developer for a cross-platform mobile app managing
-              ground personnel at Munich Airport — covering luggage, customer handling, and flight information
-              workflows.</p>
+            <p class="project-desc" data-i18n="proj-msr-desc">Lead architect and front-end developer for a cross-platform mobile app managing ground personnel at Munich Airport — covering luggage, customer handling, and flight information workflows.</p>
             <div class="tech-tags">
               <span class="tech">.NET MAUI</span>
               <span class="tech">Clean Architecture</span>
@@ -416,15 +413,13 @@
 
           <div class="project-card">
             <div class="project-header">
-              <h3 class="project-title">Educational Survey Platform</h3>
+              <h3 class="project-title" data-i18n="proj-edu-title">Educational Survey Platform</h3>
               <div class="project-meta">
-                <span class="project-client">Educational Planning Dept., State of Zurich</span>
-                <span class="project-dur">12 months</span>
+                <span class="project-client" data-i18n="client-edu">Educational Planning Dept., State of Zurich</span>
+                <span class="project-dur" data-i18n="dur-12">12 months</span>
               </div>
             </div>
-            <p class="project-desc">Cantonal data collection platform forwarding student academic performance to the
-              Swiss federal government. Maintained existing Blazor solution and architected a full modern replacement.
-            </p>
+            <p class="project-desc" data-i18n="proj-edu-desc">Cantonal data collection platform forwarding student academic performance to the Swiss federal government. Maintained existing Blazor solution and architected a full modern replacement.</p>
             <div class="tech-tags">
               <span class="tech">ASP.NET Core</span>
               <span class="tech">React/TypeScript</span>
@@ -435,14 +430,13 @@
 
           <div class="project-card">
             <div class="project-header">
-              <h3 class="project-title">Campus Management System</h3>
+              <h3 class="project-title" data-i18n="proj-campus-title">Campus Management System</h3>
               <div class="project-meta">
                 <span class="project-client">Swiss Learning Hub AG</span>
-                <span class="project-dur">37 months</span>
+                <span class="project-dur" data-i18n="dur-37">37 months</span>
               </div>
             </div>
-            <p class="project-desc">Administrative, academic, and operational platform for educational institutions.
-              Implemented features and led migration from single-server to clustered high-availability architecture.</p>
+            <p class="project-desc" data-i18n="proj-campus-desc">Administrative, academic, and operational platform for educational institutions. Implemented features and led migration from single-server to clustered high-availability architecture.</p>
             <div class="tech-tags">
               <span class="tech">WCF</span>
               <span class="tech">WinForms</span>
@@ -452,15 +446,13 @@
 
           <div class="project-card">
             <div class="project-header">
-              <h3 class="project-title">Accounting Web Applications</h3>
+              <h3 class="project-title" data-i18n="proj-accounting-title">Accounting Web Applications</h3>
               <div class="project-meta">
-                <span class="project-client">Various Clients / Personal</span>
-                <span class="project-dur">2 – 24+ months</span>
+                <span class="project-client" data-i18n="client-various">Various Clients / Personal</span>
+                <span class="project-dur" data-i18n="dur-2-24">2 – 24+ months</span>
               </div>
             </div>
-            <p class="project-desc">Full-stack accounting apps for expense tracking, report generation, and invoice
-              management. Client projects built with Next.js and MongoDB; personal project with ASP.NET Core, React, and
-              PostgreSQL in Docker.</p>
+            <p class="project-desc" data-i18n="proj-accounting-desc">Full-stack accounting apps for expense tracking, report generation, and invoice management. Client projects built with Next.js and MongoDB; personal project with ASP.NET Core, React, and PostgreSQL in Docker.</p>
             <div class="tech-tags">
               <span class="tech">React</span>
               <span class="tech">Next.js</span>
@@ -473,14 +465,13 @@
 
           <div class="project-card">
             <div class="project-header">
-              <h3 class="project-title">Hyaluron Treatment Search Platform</h3>
+              <h3 class="project-title" data-i18n="proj-hyaluron-title">Hyaluron Treatment Search Platform</h3>
               <div class="project-meta">
-                <span class="project-client">Various Clients</span>
-                <span class="project-dur">3 months</span>
+                <span class="project-client" data-i18n="client-various-only">Various Clients</span>
+                <span class="project-dur" data-i18n="dur-3">3 months</span>
               </div>
             </div>
-            <p class="project-desc">Full-stack search platform for aesthetic treatment providers with dynamic filters by
-              location, price, and type. SSR and caching for fast performance; automated with Playwright tests.</p>
+            <p class="project-desc" data-i18n="proj-hyaluron-desc">Full-stack search platform for aesthetic treatment providers with dynamic filters by location, price, and type. SSR and caching for fast performance; automated with Playwright tests.</p>
             <div class="tech-tags">
               <span class="tech">React</span>
               <span class="tech">Next.js</span>
@@ -492,15 +483,13 @@
 
           <div class="project-card">
             <div class="project-header">
-              <h3 class="project-title">Fueling System &amp; Mobile App</h3>
+              <h3 class="project-title" data-i18n="proj-fueling-title">Fueling System &amp; Mobile App</h3>
               <div class="project-meta">
                 <span class="project-client">Winarco AG</span>
-                <span class="project-dur">12 months total</span>
+                <span class="project-dur" data-i18n="dur-12-total">12 months total</span>
               </div>
             </div>
-            <p class="project-desc">Gas station payment system accepting card and mobile payments with automated pump
-              activation. Replaced resource-heavy frontend; built companion Android app with scanner integration,
-              released on Google Play.</p>
+            <p class="project-desc" data-i18n="proj-fueling-desc">Gas station payment system accepting card and mobile payments with automated pump activation. Replaced resource-heavy frontend; built companion Android app with scanner integration, released on Google Play.</p>
             <div class="tech-tags">
               <span class="tech">Java (Android)</span>
               <span class="tech">WCF</span>
@@ -516,6 +505,192 @@
     </main>
 
   </div>
+
+  <script>
+    const translations = {
+      en: {
+        // Sidebar – Personal
+        "s-personal": "Personal",
+        "s-location": "Location",
+        "s-location-val": "Itacaré, Brasil (45530-000)",
+        "s-nationality": "Nationality",
+        "s-nationality-val": "Swiss",
+        "s-dob": "Date of Birth",
+        // Sidebar – Languages
+        "s-languages": "Languages",
+        "lang-german": "German (Swiss)",
+        "lang-english": "English",
+        "lang-portuguese": "Portuguese",
+        "s-native": "Native",
+        "s-fluent": "C2 – Fluent",
+        "s-basic": "Basic",
+        // Sidebar – Skills
+        "s-skills": "Core Skills",
+        "exp-csharp": "7 yrs",
+        "exp-sql": "7 yrs",
+        "exp-js": "4 yrs",
+        "exp-python": "2 yrs",
+        "exp-nosql": "3 yrs",
+        "s-frameworks": "Frameworks & Technologies",
+        // Section headings
+        "t-experience": "Professional Experience",
+        "t-education": "Education",
+        "t-projects": "Selected Projects",
+        // Timeline
+        "present": "Present",
+        "badge-freelance": "Freelance",
+        // Job titles
+        "title-prof-eng": "Professional Software Engineer",
+        "title-sysadmin": "Junior Systems & Network Administrator",
+        "title-teamleader": "Teamleader Helpdesk & Assistant Manager IT Support CH",
+        // Job orgs
+        "org-edu-planning": "Educational Planning Department, State of Zurich",
+        "org-slh": "Swiss Learning Hub AG, Zurich",
+        "org-winarco": "Winarco AG, St. Gallen",
+        "org-sungard": "SunGard (Switzerland) SA, Zurich",
+        "org-kuoni": "Kuoni Travel AG, Zurich",
+        // Job descriptions
+        "desc-source": "Building and improving Google Cloud infrastructure for demand and supply management. Delivering Python cloud functions that handle HTTP requests, Google Cloud PubSub events, ERP integration, and order/delivery workflows — managed entirely as infrastructure as code with Terraform.",
+        "desc-a1": "Building and maintaining (DevOps) a Chrome Sidebar Extension with AI enhancements, as well as the Express.js backend server. Includes working with Salesforce and other cloud-based business tools as the main CRM.",
+        "desc-serverware": "Building a SaaS platform for virtual server subscriptions for small and medium businesses in Germany.",
+        "desc-araucon": "Multiple .NET applications and cloud infrastructure for a variety of customers.",
+        // Education
+        "edu-bachelor": "BASc Computer Science – Software Engineering",
+        "edu-ost": "University of Applied Sciences Rapperswil (OST), Switzerland",
+        "edu-it-specialist": "Certified Business IT Specialist",
+        "org-ifa": "IFA Weiterbildung AG, Zürich",
+        "edu-apprenticeship": "Apprenticeship – Computer Scientist (Systems Engineer)",
+        "org-vbz": "Zurich Public Transport, Zurich",
+        // Project titles
+        "proj-gcp-title": "Google Cloud Infrastructure",
+        "proj-edu-title": "Educational Survey Platform",
+        "proj-campus-title": "Campus Management System",
+        "proj-accounting-title": "Accounting Web Applications",
+        "proj-hyaluron-title": "Hyaluron Treatment Search Platform",
+        "proj-fueling-title": "Fueling System & Mobile App",
+        // Project clients
+        "client-dhl": "Deutsche Post DHL Group (Client of araucon GmbH)",
+        "client-munich": "Flughafen München GmbH (Client of araucon GmbH)",
+        "client-edu": "Educational Planning Dept., State of Zurich",
+        "client-various": "Various Clients / Personal",
+        "client-various-only": "Various Clients",
+        // Project durations
+        "dur-8plus": "8+ months",
+        "dur-6": "6 months",
+        "dur-12": "12 months",
+        "dur-37": "37 months",
+        "dur-2-24": "2 – 24+ months",
+        "dur-3": "3 months",
+        "dur-12-total": "12 months total",
+        // Project descriptions
+        "proj-gcp-desc": "Cloud infrastructure for demand and supply management. Python cloud functions handling HTTP requests, PubSub events, ERP updates, order and delivery confirmation. Full infrastructure as code with Terraform.",
+        "proj-hasci-desc": "Android app for 100,000+ postmen integrating with handheld scanners for parcel loading, delivery, and tracking. Supports both online and offline operation in large multi-disciplinary teams.",
+        "proj-msr-desc": "Lead architect and front-end developer for a cross-platform mobile app managing ground personnel at Munich Airport — covering luggage, customer handling, and flight information workflows.",
+        "proj-edu-desc": "Cantonal data collection platform forwarding student academic performance to the Swiss federal government. Maintained existing Blazor solution and architected a full modern replacement.",
+        "proj-campus-desc": "Administrative, academic, and operational platform for educational institutions. Implemented features and led migration from single-server to clustered high-availability architecture.",
+        "proj-accounting-desc": "Full-stack accounting apps for expense tracking, report generation, and invoice management. Client projects built with Next.js and MongoDB; personal project with ASP.NET Core, React, and PostgreSQL in Docker.",
+        "proj-hyaluron-desc": "Full-stack search platform for aesthetic treatment providers with dynamic filters by location, price, and type. SSR and caching for fast performance; automated with Playwright tests.",
+        "proj-fueling-desc": "Gas station payment system accepting card and mobile payments with automated pump activation. Replaced resource-heavy frontend; built companion Android app with scanner integration, released on Google Play.",
+      },
+      de: {
+        // Sidebar – Personal
+        "s-personal": "Persönlich",
+        "s-location": "Wohnort",
+        "s-location-val": "Itacaré, Brasilien (45530-000)",
+        "s-nationality": "Nationalität",
+        "s-nationality-val": "Schweizer",
+        "s-dob": "Geburtsdatum",
+        // Sidebar – Languages
+        "s-languages": "Sprachen",
+        "lang-german": "Deutsch (Schweiz)",
+        "lang-english": "Englisch",
+        "lang-portuguese": "Portugiesisch",
+        "s-native": "Muttersprache",
+        "s-fluent": "C2 – Fließend",
+        "s-basic": "Grundkenntnisse",
+        // Sidebar – Skills
+        "s-skills": "Kernkompetenzen",
+        "exp-csharp": "7 J.",
+        "exp-sql": "7 J.",
+        "exp-js": "4 J.",
+        "exp-python": "2 J.",
+        "exp-nosql": "3 J.",
+        "s-frameworks": "Frameworks & Technologien",
+        // Section headings
+        "t-experience": "Berufserfahrung",
+        "t-education": "Ausbildung",
+        "t-projects": "Ausgewählte Projekte",
+        // Timeline
+        "present": "Heute",
+        "badge-freelance": "Freelancer",
+        // Job titles
+        "title-prof-eng": "Software Engineer",
+        "title-sysadmin": "Junior System- & Netzwerkadministrator",
+        "title-teamleader": "Teamleiter Helpdesk & Stv. IT-Support Manager CH",
+        // Job orgs
+        "org-edu-planning": "Bildungsplanungsamt, Kanton Zürich",
+        "org-slh": "Swiss Learning Hub AG, Zürich",
+        "org-winarco": "Winarco AG, St. Gallen",
+        "org-sungard": "SunGard (Schweiz) SA, Zürich",
+        "org-kuoni": "Kuoni Travel AG, Zürich",
+        // Job descriptions
+        "desc-source": "Aufbau und Verbesserung der Google-Cloud-Infrastruktur für das Angebots- und Nachfragemanagement. Entwicklung von Python-Cloud-Funktionen zur Verarbeitung von HTTP-Anfragen, Google Cloud PubSub-Events, ERP-Integration sowie Bestell- und Lieferworkflows – vollständig als Infrastructure as Code mit Terraform verwaltet.",
+        "desc-a1": "Aufbau und Wartung (DevOps) einer Chrome-Sidebar-Erweiterung mit KI-Erweiterungen sowie des Express.js-Backend-Servers. Beinhaltet die Arbeit mit Salesforce und anderen cloudbasierten Business-Tools als Haupt-CRM.",
+        "desc-serverware": "Entwicklung einer SaaS-Plattform für virtuelle Server-Abonnements für kleine und mittlere Unternehmen in Deutschland.",
+        "desc-araucon": "Verschiedene .NET-Applikationen und Cloud-Infrastruktur für eine Vielzahl von Kunden.",
+        // Education
+        "edu-bachelor": "BASc Informatik – Software Engineering",
+        "edu-ost": "Hochschule für Technik Rapperswil (OST), Schweiz",
+        "edu-it-specialist": "Eidg. dipl. Wirtschaftsinformatiker",
+        "org-ifa": "IFA Weiterbildung AG, Zürich",
+        "edu-apprenticeship": "Lehre als Informatiker EFZ (Systemtechnik)",
+        "org-vbz": "Zürcher Verkehrsbetriebe (VBZ), Zürich",
+        // Project titles
+        "proj-gcp-title": "Google Cloud Infrastruktur",
+        "proj-edu-title": "Bildungserhebungsplattform",
+        "proj-campus-title": "Campus-Management-System",
+        "proj-accounting-title": "Buchhaltungs-Webanwendungen",
+        "proj-hyaluron-title": "Hyaluron-Behandlungs-Suchplattform",
+        "proj-fueling-title": "Tanksystem & Mobile App",
+        // Project clients
+        "client-dhl": "Deutsche Post DHL Group (Kunde von araucon GmbH)",
+        "client-munich": "Flughafen München GmbH (Kunde von araucon GmbH)",
+        "client-edu": "Bildungsplanungsamt, Kanton Zürich",
+        "client-various": "Verschiedene Kunden / Privat",
+        "client-various-only": "Verschiedene Kunden",
+        // Project durations
+        "dur-8plus": "8+ Monate",
+        "dur-6": "6 Monate",
+        "dur-12": "12 Monate",
+        "dur-37": "37 Monate",
+        "dur-2-24": "2 – 24+ Monate",
+        "dur-3": "3 Monate",
+        "dur-12-total": "12 Monate gesamt",
+        // Project descriptions
+        "proj-gcp-desc": "Cloud-Infrastruktur für das Angebots- und Nachfragemanagement. Python-Cloud-Funktionen zur Verarbeitung von HTTP-Anfragen, PubSub-Events, ERP-Aktualisierungen sowie Auftrags- und Lieferbestätigungen. Vollständige Infrastruktur als Code mit Terraform.",
+        "proj-hasci-desc": "Android-App für über 100.000 Zusteller zur Integration mit Handscannern für Paketzustellung, -verfolgung und -erfassung. Unterstützt Online- und Offline-Betrieb in großen interdisziplinären Teams.",
+        "proj-msr-desc": "Lead-Architekt und Frontend-Entwickler für eine plattformübergreifende mobile App zur Verwaltung des Bodenpersonals am Flughafen München – inklusive Gepäck, Kundenbetreuung und Fluginformations-Workflows.",
+        "proj-edu-desc": "Kantonale Datenerfassungsplattform zur Weiterleitung akademischer Schülerleistungen an den Schweizer Bundesrat. Wartung der bestehenden Blazor-Lösung und Architektur eines vollständigen modernen Nachfolgesystems.",
+        "proj-campus-desc": "Administrative, akademische und betriebliche Plattform für Bildungseinrichtungen. Implementierung neuer Funktionen und Leitung der Migration von einer Einzelserver- zu einer geclusterten Hochverfügbarkeitsarchitektur.",
+        "proj-accounting-desc": "Full-Stack-Buchhaltungsanwendungen für Ausgabenverfolgung, Berichtserstellung und Rechnungsverwaltung. Kundenprojekte mit Next.js und MongoDB; persönliches Projekt mit ASP.NET Core, React und PostgreSQL in Docker.",
+        "proj-hyaluron-desc": "Full-Stack-Suchplattform für Anbieter ästhetischer Behandlungen mit dynamischen Filtern nach Standort, Preis und Art. SSR und Caching für schnelle Performance; automatisiert mit Playwright-Tests.",
+        "proj-fueling-desc": "Tankstellenzahlungssystem für Karten- und Mobilzahlungen mit automatischer Pumpenaktivierung. Ersatz des ressourcenintensiven Frontends; Entwicklung einer Begleit-Android-App mit Scanner-Integration, veröffentlicht im Google Play Store.",
+      }
+    };
+
+    function setLang(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const text = translations[lang][key];
+        if (text !== undefined) el.textContent = text;
+      });
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+      document.documentElement.lang = lang;
+    }
+
+    setLang('en');
+  </script>
 </body>
 
 </html>
