@@ -4,7 +4,9 @@
    ============================================================ */
 
 /* === RESET & BASE === */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -169,6 +171,12 @@ body {
   background: rgba(59, 130, 246, 0.12);
   color: #93c5fd;
   border: 1px solid rgba(59, 130, 246, 0.28);
+}
+
+.lang-badge.fluent2 {
+  background: rgba(165, 14, 102, 0.12);
+  color: #ff95e5;
+  border: 1px solid rgba(165, 14, 102, 0.28);
 }
 
 .lang-badge.basic {
@@ -488,42 +496,6 @@ body {
 }
 
 /* ============================================================
-   PRINT STYLES
-   ============================================================ */
-@media print {
-  body {
-    background: white;
-    font-size: 11px;
-  }
-
-  .cv-wrapper {
-    box-shadow: none;
-    margin: 0;
-    border-radius: 0;
-    max-width: 100%;
-  }
-
-  .cv-main {
-    padding: 36px 40px;
-  }
-
-  .project-card,
-  .timeline-item {
-    break-inside: avoid;
-  }
-
-  .project-card:hover {
-    transform: none;
-    box-shadow: none;
-  }
-
-  .cv-sidebar {
-    print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
-  }
-}
-
-/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 960px) {
@@ -550,5 +522,58 @@ body {
 
   .section-title {
     font-size: 14px;
+  }
+}
+
+/* ============================================================
+   PRINT STYLES
+   Must come after all responsive rules so it wins the cascade.
+   ============================================================ */
+@media print {
+  body {
+    background: white;
+    font-size: 11px;
+  }
+
+  /* Force the two-column layout regardless of page width */
+  .cv-wrapper {
+    display: grid;
+    grid-template-columns: 295px 1fr;
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+    max-width: 100%;
+    min-height: unset;
+    overflow: visible;
+  }
+
+  /* Hide the language switcher */
+  .cv-topbar {
+    display: none;
+  }
+
+  .cv-sidebar {
+    overflow: visible;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .cv-main {
+    padding: 36px 40px;
+    overflow: visible;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card,
+  .timeline-item {
+    break-inside: avoid;
+  }
+
+  .project-card:hover {
+    transform: none;
+    box-shadow: none;
   }
 }
